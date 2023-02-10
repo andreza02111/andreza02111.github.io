@@ -1,0 +1,49 @@
+.h1_titu{
+    text-align: center;
+}
+
+.img-ps3{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.h1_text{
+    float: left;
+
+}
+
+.btn-edit{
+    float: left;
+    background: black;
+    border: 1px solid green;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    margin: 5px;
+    
+}
+.color{
+    background: green;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.cor-test{
+    color: white;
+}
+.icones{
+    width: 50px;
+    height: 50px;
+
+}
+.frete{
+    color: white;
+    background: black;
+    font-size: 20px;
+}
