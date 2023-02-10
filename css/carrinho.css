@@ -1,0 +1,42 @@
+.container{
+    background:white;
+    border: 5px solid green;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+}
+
+.card{
+   background: black;
+   color: white;
+   text-align: center;
+   border: 2px solid green;
+ 
+   
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid green;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+.botao_carrinho{
+    background: black;
+    border: 1px solid green;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: max-content
+}
