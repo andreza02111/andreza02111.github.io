@@ -1,0 +1,46 @@
+body {
+    background-color: #f5f5f5; /* cor de fundo */
+  }
+  
+  .container {
+    background-color: #fff; /* cor do container */
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* sombra */
+    border-radius: 5px; /* borda arredondada */
+  }
+  
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .btn {
+    margin-top: 20px;
+  }
+  
+  .table {
+    margin-top: 30px;
+  }
+  
+  .table th {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 800px; /* largura máxima do container */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

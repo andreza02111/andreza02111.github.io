@@ -1,0 +1,22 @@
+footer{
+    background: #000000;
+    margin-top: 20px;
+}
+.footer_texts{
+    color: white;
+    border: 5px solid rgba(90, 236, 77, 0.801);
+    font-size: 15px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
+    background: rgb(0, 0, 0);
+   
+}
+.copy{
+    color:white;
+    text-align: center;
+}
+.icones{
+    width: 10px;
+    height: 10px;
+}

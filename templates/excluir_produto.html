@@ -1,0 +1,19 @@
+{% include 'header-admin.html' %}
+{% load static %}
+
+<div class="col-md-10">
+  <div class="content-box-large">
+    <div class="panel-heading">
+      <div class="panel-title">Excluir Produto</div>
+    </div>
+
+    <div class="panel-body">
+      <p>Tem certeza que deseja excluir o produto <strong>{{ produto.nome }}</strong>?</p>
+      <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Sim, excluir</button>
+        <a href="{% url 'LISTAGEM-PROD_URL' %}" class="btn btn-default">Cancelar</a>
+      </form>
+    </div>
+  </div>
+</div>

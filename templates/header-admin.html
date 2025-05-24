@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Acesso Restrito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <!-- Logo -->
+        <div class="logo">
+          <h1><a href="#">Acesso Restrito</a></h1>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-lg-12">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="navbar navbar-inverse" role="banner">
+          <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+             
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user.username }} <b class="caret"></b></a>
+          
+
+
+                <ul class="dropdown-menu animated fadeInUp">
+                  <li><a href="{% url 'LOGOUT_ADMIN_URL' %}">Sair</a></li>
+                </ul>
+              
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="sidebar content-box" style="display: block;">
+        <ul class="nav">
+          <!-- Main menu -->
+          <li class="current"><a href="{% url 'ADMIN_DASHBOARD_URL' %}"><i class="glyphicon glyphicon-home"></i> Início</a></li>
+
+          <li><a href="{% url 'CADPRODUTO_URL' %}"><i class="glyphicon glyphicon-pencil"></i> Cadastro de Produtos</a></li>
+
+          <li><a href="{% url 'LISTAGEM-PROD_URL' %}"><i class="glyphicon glyphicon-list"></i> Meus Produtos</a></li>
+          <li><a href="{% url 'EMPRESA_DADOS_URL' %}"><i class="glyphicon glyphicon-user"></i> Meus Dados</a></li>
+          <li><a href="{% url 'LISTAR_CATEGORIAS_URL' %}"><i class="glyphicon glyphicon-tags"></i> Categorias</a></li>
+
+          <li><a href="#"><i class="glyphicon glyphicon-user"></i> Cadastro de Admins</a></li>
+
+        </ul>
+      </div>
+    </div>

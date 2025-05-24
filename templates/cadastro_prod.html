@@ -1,0 +1,71 @@
+{% include 'header-admin.html' %}
+{% load static %}
+
+<div class="col-md-10">
+
+    <div class="content-box-large">
+
+      <div class="panel-heading">
+        <div class="panel-title">Cadastro Produto</div>
+      </div>
+
+      <div class="panel-body">
+        <table class="table table-striped">
+          <thead>
+            
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section>
+        <div class="elementos-form">
+            <img src="../icons/falecnosco.png" alt="">
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.nome.label_tag }}
+                {{ form.nome }}
+            </div>
+            <div class="form-group">
+                {{ form.descricao.label_tag }}
+                {{ form.descricao }}
+            </div>
+            <div class="form-group">
+                {{ form.valor.label_tag }}
+                {{ form.valor }}
+            </div>
+            <div class="form-group">
+                {{ form.observacao.label_tag }}
+                {{ form.observacao }}
+            </div>
+            
+            <div class="form-group">
+                {{ form.categoria.label_tag }}
+                {{ form.categoria }}
+            </div>
+            <div class="form-group">
+                {{ form.nova_categoria.label_tag }}
+                {{ form.nova_categoria }}
+                <small class="text-muted">Se quiser criar uma nova categoria, preencha este campo.</small>
+            </div>
+
+            <div class="form-group">
+                {{ form.imagem.label_tag }}
+                {{ form.imagem }}
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </section>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

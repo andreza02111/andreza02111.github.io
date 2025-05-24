@@ -1,0 +1,48 @@
+{% include 'header-admin.html' %}
+{% load static %}
+
+<div class="col-md-10">
+  <div class="content-box-large">
+    <div class="panel-heading">
+      <div class="panel-title">Bem-vindo ao Painel Administrativo</div>
+    </div>
+
+    <div class="panel-body">
+      <p>Olá, <strong>{{ user.username }}</strong>! Aqui você pode gerenciar seus produtos, categorias e dados administrativos.</p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">Produtos</div>
+            <div class="panel-body">
+              <p>Cadastre e visualize seus produtos.</p>
+              <a href="{% url 'CADPRODUTO_URL' %}" class="btn btn-primary btn-block">Cadastrar Produto</a>
+              <a href="{% url 'LISTAGEM-PROD_URL' %}" class="btn btn-default btn-block">Ver Produtos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Categorias</div>
+            <div class="panel-body">
+              <p>Gerencie as categorias dos produtos.</p>
+              <a href="{% url 'LISTAR_CATEGORIAS_URL' %}" class="btn btn-success btn-block">Ver Categorias</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">Conta</div>
+            <div class="panel-body">
+              <p>Atualize seus dados ou saia do sistema.</p>
+              <a href="{% url 'LOGOUT_ADMIN_URL' %}" class="btn btn-warning btn-block">Sair</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

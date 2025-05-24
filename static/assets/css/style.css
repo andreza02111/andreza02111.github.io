@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital@1&family=Roboto+Mono&display=swap');
+nav {
+    border: 5px solid rgba(90, 236, 77, 0.801);
+    font-size: 20px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Mono', monospace;
+    background: rgb(0, 0, 0);
+}
+
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-item {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.dropdown-menu {
+    background: #000;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
+
+
+.dropdown-item {
+    color: white;
+}
+
+.h1alinha {
+    text-align: center;
+}
+
+a:hover {
+    background: linear-gradient(to right, rgb(0, 255, 0) 50%, rgb(255, 255, 255)50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    text-align: center;
+}
+
+.img-frente {
+    width: 150px;
+    height: 150px;
+}
+
+.btn {
+    background: black;
+    border: 1px solid green;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    width: max-content
+}
+
+.btn_test {
+    text-align: center;
+}
+
+.alinha {
+    background: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    width: max-content
+}
+

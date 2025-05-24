@@ -1,0 +1,98 @@
+.h1_titu{
+    text-align: center;
+}
+
+.img-ps3{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.h1_text{
+    float: left;
+
+}
+
+.btn-edit{
+    float: left;
+    background:rgba(128, 128, 128, 0.685);
+    border: 1px solid green;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    display: block;
+    margin: 5px;
+    
+}
+.btn-edit:hover{
+background-color: #000000; 
+}
+
+
+.color{
+    background: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.cor-test{
+    color: black;
+    text-align: center;
+}
+.icones{
+    width: 10px;
+    height: 10px;
+
+}
+.frete{
+    color: black;
+   
+    font-size: 20px;
+}
+.cor-back{
+
+    background-color: rgba(128, 128, 128, 0.685);
+    color: white;
+    border-radius: 5px;
+  
+    
+}
+
+.titulo_especi{
+    text-align: center;
+    font-size: 20px;
+}
+table{
+  
+    width: 400px;
+    height: 100px;
+    background:rgba(253, 253, 253, 0.616);
+    border-radius: 5px;
+     
+}
+
+.descri{
+   border:1px solid black;
+   font-size: 20px;
+   text-align: justify;
+}
+a{
+    color:rgb(255, 248, 248);
+   
+}
+.sobre{
+    background: black;
+    border-radius: 10px;
+    text-align: center;
+    width: 110px;
+}
+.correto{
+    width: 30px;
+    height: 30px;
+}

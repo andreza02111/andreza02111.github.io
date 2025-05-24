@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+ <title>Cadastro Empresa</title>
+
+    <!-- Bootstrap e jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
+
+</head>
+<body>
+
+    <!-- Cabeçalho com menu -->
+    {% include 'header.html' %}
+  
+
+    <div class="cadastro-container">
+        <h2>Cadastro Empresa</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Registrar</button>
+            <a href="{% url 'ADMIN_URL' %}" style="text-decoration: none;  color: inherit;">
+            <button type="button">Voltar</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

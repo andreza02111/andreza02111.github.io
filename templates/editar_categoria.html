@@ -1,0 +1,22 @@
+{% include 'header-admin.html' %}
+{% load static %}
+
+<div class="col-md-10">
+  <div class="content-box-large">
+    <div class="panel-heading">
+      <div class="panel-title">Editar Categoria</div>
+    </div>
+
+    <div class="panel-body">
+      <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+          {{ form.nome.label_tag }}
+          {{ form.nome }}
+        </div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <a href="{% url 'LISTAR_CATEGORIAS_URL' %}" class="btn btn-default">Cancelar</a>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - MicroMundo</title>
+
+    <!-- Bootstrap e jQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="{% static 'assets/css/index.css' %}">
+    
+</head>
+<body>
+
+    <!-- Cabeçalho com menu -->
+    {% include 'header.html' %}
+    <section class="container mt-5">
+    <!-- Container principal do login -->
+    <div class="login-container">
+        <h2>Login da Empresa</h2>
+
+        {% if messages %}
+            <div class="alert alert-danger">
+                <ul class="errorlist">
+                    {% for message in messages %}
+                        <li class="{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <form method="POST" action="{% url 'LOGIN_ADMIN_URL' %}">
+            {% csrf_token %}
+            <input
+                class="input_login"
+                type="text"
+                name="username"
+                placeholder="Usuário"
+                required
+            />
+            <input
+                class="input_login"
+                type="password"
+                name="password"
+                placeholder="Senha"
+                required
+            />
+            <button type="submit">Login</button>
+
+            <!-- Links com botões personalizados -->
+            <a href="{% url 'CADASTRO_URL' %}" style="text-decoration: none;  color: inherit;">
+                <button type="button" CADASTRO_URL>Cadastre-se</button>
+            </a>
+            <a href="{% url 'BASE_URL' %}" style="text-decoration: none;  color: inherit;">
+                <button type="button">Voltar</button>
+            </a>
+        </form>
+    </div>
+</section>
+</body>
+</html>

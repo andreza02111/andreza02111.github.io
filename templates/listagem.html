@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  {% load static %}
+  <title>Listagem DB</title>
+ <link rel="stylesheet" href="{% static 'css/tabela.css' %}">
+</head>
+<body>
+  <h1 class="texto_h1">LISTAGEM</h1>
+
+    <table >
+        <tr>
+            <th>nome</th>
+            <th>email</th>
+            <th>assunto</th>
+            <th>menssagem</th>
+            <th>data</th>
+      
+        </tr>
+
+        {% for item in contatos %}
+        <tr>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.assunto }}</td>
+            <td>{{ item.menssagem }}</td>
+            <td>{{ item.data }}</td>
+            <td>
+          
+          </td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+    </a>
+ </div>
+</body>
+</html>
