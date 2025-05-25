@@ -97,8 +97,11 @@ def logout_admin(request):
     return redirect('LOGIN_ADMIN_URL')
 
 
+
 def admin_dashboard(request):
-    return render(request, 'admin_dashboard.html')
+    empresa_id = request.session.get('empresa_id')
+    empresa = Empresa.objects.filter(id=empresa_id).first()
+    return render(request, 'admin_dashboard.html', {'empresa': empresa})
 
 from django.shortcuts import render, redirect
 from .forms import ProdutoForm
@@ -146,7 +149,6 @@ def excluir_produto(request, id):
 from .models import Categoria
 from django.contrib.auth.decorators import login_required
 
-@login_required
 def listar_categorias(request):
     categorias = Categoria.objects.all()
     return render(request, 'listar_categorias.html', {'categorias': categorias})
@@ -212,7 +214,7 @@ def editar_empresa(request):
         form = EmpresaForm(request.POST, request.FILES, instance=empresa)
         if form.is_valid():
             form.save()
-            return redirect('meus_dados_empresa')  # Redireciona para a visualização dos dados
+            return redirect('EMPRESA_DADOS_URL')  # Redireciona para a visualização dos dados
     else:
         form = EmpresaForm(instance=empresa)
 

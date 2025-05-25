@@ -1,5 +1,6 @@
 {% include 'header-admin.html' %}
 {% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/index_admin.css' %}">
 
 <div class="col-md-10">
   <div class="content-box-large">
@@ -23,7 +24,7 @@
             <td>{{ categoria.dt_criacao|date:"d/m/Y H:i" }}</td>
             <td>
               <a href="{% url 'EDITAR_CATEGORIA_URL' categoria.id %}" class="btn btn-sm btn-warning">Editar</a>
-              <a href="{% url 'EXCLUIR_CATEGORIA_URL' categoria.id %}" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir esta categoria?');">Excluir</a>
+              <a href="{% url 'EXCLUIR_CATEGORIA_URL' categoria.id %}" class="btn btn-sm btn-warning" onclick="return confirm('Tem certeza que deseja excluir esta categoria?');">Excluir</a>
             </td>
           </tr>
           {% endfor %}

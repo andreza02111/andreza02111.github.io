@@ -1,6 +1,6 @@
 {% include 'header-admin.html' %}
 {% load static %}
-
+ <link rel="stylesheet" href="{% static 'assets/css/index_admin.css' %}">
 <div class="col-md-10">
   <div class="content-box-large">
     <div class="panel-heading">
@@ -15,7 +15,7 @@
           <div class="panel panel-info">
             <div class="panel-heading">Produtos</div>
             <div class="panel-body">
-              <p>Cadastre e visualize seus produtos.</p>
+              <h5>Cadastre e visualize seus produtos.</h5>
               <a href="{% url 'CADPRODUTO_URL' %}" class="btn btn-primary btn-block">Cadastrar Produto</a>
               <a href="{% url 'LISTAGEM-PROD_URL' %}" class="btn btn-default btn-block">Ver Produtos</a>
             </div>
@@ -26,7 +26,7 @@
           <div class="panel panel-success">
             <div class="panel-heading">Categorias</div>
             <div class="panel-body">
-              <p>Gerencie as categorias dos produtos.</p>
+              <h5>Gerencie as categorias dos produtos.</h5>
               <a href="{% url 'LISTAR_CATEGORIAS_URL' %}" class="btn btn-success btn-block">Ver Categorias</a>
             </div>
           </div>
@@ -36,7 +36,8 @@
           <div class="panel panel-warning">
             <div class="panel-heading">Conta</div>
             <div class="panel-body">
-              <p>Atualize seus dados ou saia do sistema.</p>
+              <h5>Atualize seus dados ou saia do sistema.</h5>
+              <a href="{% url 'EMPRESA_DADOS_URL' %}" class="btn btn-warning btn-block">Meus Dados</a>
               <a href="{% url 'LOGOUT_ADMIN_URL' %}" class="btn btn-warning btn-block">Sair</a>
             </div>
           </div>

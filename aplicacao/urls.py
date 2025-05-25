@@ -29,7 +29,7 @@ urlpatterns = [
     path('categorias/excluir/<int:id>/', excluir_categoria, name='EXCLUIR_CATEGORIA_URL'),
     path('cadastro-empresa/', views.cadastro_empresa, name='CADASTRO_URL'),
     path('meus-dados/', views.meus_dados_empresa, name='EMPRESA_DADOS_URL'),
-    path('empresa/editar/', views.editar_empresa, name='editar_empresa'),
+    path('empresa/editar/', views.editar_empresa, name='editar_empresa')
 
 
     

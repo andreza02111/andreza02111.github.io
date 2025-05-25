@@ -1,6 +1,6 @@
 {% include 'header-admin.html' %}
 {% load static %}
-
+<link rel="stylesheet" href="{% static 'assets/css/index_admin.css' %}">
 <div class="col-md-10">
 
     <div class="content-box-large">
@@ -34,7 +34,7 @@
         <td><img src="{{ produto.imagem.url }}" alt="{{ produto.nome }}" width="100"></td>
         <td>
   <a href="{% url 'EDITAR_PRODUTO_URL' produto.id %}" class="btn btn-sm btn-warning">Editar</a>
-  <a href="{% url 'EXCLUIR_PRODUTO_URL' produto.id %}" class="btn btn-sm btn-danger" onclick="return confirm('Tem certeza que deseja excluir este produto?');">Excluir</a>
+  <a href="{% url 'EXCLUIR_PRODUTO_URL' produto.id %}" class="btn btn-sm btn-warning" onclick="return confirm('Tem certeza que deseja excluir este produto?');">Excluir</a>
 </td>
 
             </tr>

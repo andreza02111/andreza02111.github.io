@@ -1,6 +1,6 @@
 {% include 'header-admin.html' %}
 {% load static %}
-
+<link rel="stylesheet" href="{% static 'assets/css/index_admin.css' %}">
 <div class="col-md-10">
 
     <div class="content-box-large">
@@ -21,9 +21,6 @@
         {% endfor %}
     {% endif %}
     <section>
-        <div class="elementos-form">
-            <img src="../icons/falecnosco.png" alt="">
-        </div>
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-group">
