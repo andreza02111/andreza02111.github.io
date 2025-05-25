@@ -1,0 +1,101 @@
+
+a {
+    color: white;
+}
+Body {
+    background-color: #83516e;
+}
+.nav {
+    background-color: #83516e;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.nav li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav li a {
+    display: block;
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Hover */
+.nav li:hover a {
+    background-color: #fdfe8d;
+    color: #83516e;
+    transform: translateX(5px);
+}
+
+/* Ativo */
+.nav li.active a {
+    background-color: #fdfe8d;
+    color: #83516e;
+    font-weight: bold;
+    border-left: 5px solid #83516e;
+    border-radius: 10px;
+}
+/* Botão do usuário no topo */
+.navbar-nav > .dropdown > a.dropdown-toggle {
+    background-color: #83516e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    min-width: 160px;
+    text-align: center;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: #83516e;
+    border-radius: 8px;
+    border: none;
+    padding: 5px 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+}
+
+/* Botão "Sair" */
+.dropdown-menu > li > a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+    min-width: 160px;
+
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #fdfe8d;
+    color: #83516e;
+    border: 5px solid #fdfe8d;
+
+}
+.usuario-logado {
+    border: 2px solid #fdfe8d; 
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #83516e;
+    color: white;
+    display: inline-block;
+    min-width: 160px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.usuario-logado:hover {
+    background-color: #fdfe8d;
+    color: #83516e;
+}
+h1{
+    color: white;
+}
